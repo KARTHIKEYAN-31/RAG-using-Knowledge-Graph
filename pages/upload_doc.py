@@ -14,8 +14,9 @@ if doc_list != []:
     with st.expander("Uploaded Files"):
         c = st.columns([3,1])
         with c[0]:
+            cont = st.container(height= 150, border= True)
             for doc in doc_list:
-                st.write(doc)
+                cont.write(doc)
         with c[1]:
             st.page_link("pages/chat.py", label= "Initiate Chat", icon = ":material/chat:")
 

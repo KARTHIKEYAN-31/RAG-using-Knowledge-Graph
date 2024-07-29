@@ -49,8 +49,6 @@ neo4j_vector = Neo4jVector.from_existing_index(
 
 
 
-
-
 #endpoint to process uploaded file
 # @app.post("/upload")
 def upload_file(file): #get file

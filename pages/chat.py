@@ -4,6 +4,11 @@ import time
 import os 
 
 
+if st.session_state.messages == []:
+    st.session_state.messages.append({"role": "assistant", "content": "Hi, how can I help you?"})
+
+
+@st.experimental_dialog("Are you sure?")
 def clear_data_db(file = None):
     c1, c2 = st.columns(2)
     # st.write("Are you sure?")
@@ -14,6 +19,7 @@ def clear_data_db(file = None):
             else:
                 mess = func.delete_table(file)
             st.rerun()
+            return mess
 
 
 def stream_data():
@@ -39,7 +45,8 @@ if all_doc == False:
 
 if st.sidebar.button("Clear Chat", use_container_width=True):
     st.session_state.messages = []
-if st.sidebar.button("Clear File in DB", use_container_width=True):
+    st.rerun()
+if st.sidebar.button("Clear Data in DB", use_container_width=True):
     if all_doc:
         clear_data_db()
     else:

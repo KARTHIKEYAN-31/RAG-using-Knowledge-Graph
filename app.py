@@ -9,6 +9,10 @@ if "messages" not in st.session_state:
 if "file_name" not in st.session_state:
     st.session_state.file_name = "" 
 
+if st.session_state.messages == []:
+    st.session_state.messages.append({"role": "assistant", "content": "Hi, how can I help you?"})
+
+
 pages_dict = {
     "Chat With Docs":
     [
