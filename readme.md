@@ -45,11 +45,11 @@ It contains the libraries required to run the
 
 - To convert the file into vectors and upload it into the Neo4j Vector DB, select File upload in Dropdown > upload document using Browse File. Once the document uploaded "Success" message appears and chat option is enabled.
 
-![app.py - upload Data](Screenshots/app_upload_doc.PNG "app.py - upload Data")
+![app.py - upload Data](Screenshots/app_upload_doc1.PNG "app.py - upload Data")
 
 - Select "Chat with Pre-Uploaded Data" from dropdown to chat withe the docs already uploaded into the DB. By default a "all document" toggle is dis selected to chat with a particular docs.
 
-![app.py - Pre_uploaded Data - select Docs](Screenshots/app_chat.PNG "app.py - Pre_uploaded Data - select Docs")
+![app.py - Pre_uploaded Data - select Docs](Screenshots/app_chat1.PNG "app.py - Pre_uploaded Data - select Docs")
 
 - To chat with all docs without selecting a particular data, select "all document" toggle.
 
